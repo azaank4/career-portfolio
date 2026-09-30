@@ -1,8 +1,13 @@
 # Engineering Project Highlights
 
+> **Confidentiality:** This portfolio contains generalized descriptions of
+> professional work. Client identities, proprietary data, source code,
+> credentials, internal URLs, business-sensitive metrics, and other
+> confidential information have been intentionally omitted.
+
 A selection of professional projects I've contributed to. Client and product names
-are generalized and internal details are omitted out of confidentiality, but the
-technical scope and my contributions are accurate.
+are generalized and implementation specifics are omitted, but the technical scope
+and my contributions are accurate.
 
 ---
 
@@ -13,19 +18,18 @@ LLM pipeline, and surfaces lead/call intelligence through a dashboard, for a
 real-estate services client.
 
 **What I did:**
-- Built the backend from scratch (Python, FastAPI, Celery) including an async
-  LLM-based call transcription/extraction/analysis pipeline with checkpointed,
+- Built the backend (Python, FastAPI, Celery), including an asynchronous LLM-based
+  call transcription, extraction, and analysis pipeline with checkpointed,
   idempotent job processing.
-- Replaced a database-row-locking job queue with Celery + Redis and containerized the
-  full stack, validated end-to-end with real task dispatch.
-- Built an automated evaluation harness (output-fabrication checks, human-review
-  rubric, release-readiness checklist) to gate LLM output quality before release.
-- Added production reliability hardening: retry logic with backoff, stuck-job and
-  cost monitoring, and a self-healing recovery endpoint for the job pipeline.
-- Implemented role-based, multi-tenant read APIs and export endpoints.
-- Reverse-engineered and integrated a third-party CRM's read-only API to
-  automatically pull call/contact data into the pipeline, validating it end-to-end
-  via two independent integration paths against real production data.
+- Migrated job queuing to Celery + Redis and containerized the full stack, with
+  end-to-end validation.
+- Built an automated evaluation harness (output-fabrication checks, a human-review
+  rubric, and a release-readiness checklist) to gate LLM output quality.
+- Added reliability mechanisms including retry/backoff handling, job and cost
+  monitoring, and automated recovery for failed processing jobs.
+- Implemented role-based access control for multi-tenant read APIs and data export.
+- Integrated a third-party CRM API to automatically ingest call and contact
+  information into the processing pipeline, with end-to-end integration validation.
 - Built the dashboard/UI layer: transcript views with feedback cards, stats and
   score visualizations, and data export.
 
@@ -36,28 +40,27 @@ third-party API integration, Docker.
 
 ## Healthcare Documentation Processing Suite
 
-A set of backend services for a healthcare-documentation client: document/OCR data
-extraction, fax-based document intake, and call-transcript processing with clinical
-rating.
+A set of backend services for a documentation-processing client: document/OCR
+extraction, document intake, and transcript processing with structured quality
+assessment.
 
 **What I did:**
 - Built and maintained multiple backend services (OCR/document extraction,
-  fax-based intake, transcript processing) on a Python/FastAPI + Celery
+  document intake, transcript processing) on a Python/FastAPI + Celery
   architecture.
 - Implemented an LLM-based structured-extraction pipeline with configurable
-  concurrency, progress reporting, and output caching for performance.
-- Built a clinical transcript-rating pipeline scoring documentation quality against
-  a structured schema, including consistency fixes for near-duplicate inputs.
-- Led a PHI/compliance hardening initiative: added a second authentication factor,
-  per-client credential scoping and authorization, a dedicated audit trail for
-  sensitive-data access, encryption of results at rest, log redaction, and a
-  human-review gate before AI output reaches the client-facing API.
-- Fixed a range of production reliability issues: a resource leak in a PDF library,
-  async I/O bugs, HTTP error misclassification, and request-correlation logging.
-- Added a CI test suite and an authenticated task-monitoring dashboard.
+  concurrency, progress reporting, and output caching.
+- Built a transcript-quality assessment pipeline against a structured evaluation
+  schema, including consistency handling for near-duplicate inputs.
+- Led security and compliance hardening for systems processing sensitive
+  documentation, covering authentication, authorization, auditability,
+  encryption, and human review of AI output.
+- Fixed production reliability issues (resource leaks, async I/O bugs,
+  error-handling and observability gaps).
+- Added a CI test suite and task monitoring.
 
 **Stack:** Python, FastAPI, Celery, OCR/document processing, LLM-based extraction,
-healthcare-data compliance (PHI/HIPAA-style hardening), CI/CD.
+sensitive-data compliance, CI/CD.
 
 ---
 
@@ -81,9 +84,9 @@ cloud storage, CI/CD, data-quality processes.
 
 ---
 
-## cybergraph — Standalone Authentication & API Service
+## Standalone Authentication & API Service
 
-An independent backend service I built end-to-end.
+A backend service developed as part of professional engineering work.
 
 **What I did:**
 - Built a FastAPI backend from an initial scaffold through a working API: designed
@@ -94,7 +97,7 @@ An independent backend service I built end-to-end.
 
 ---
 
-## Additional Contributions
+## Additional Engineering Contributions
 
-- Contributed a scoped feature (model and background-processing changes) via a
-  merged pull request to an AI-powered product built primarily by other engineers.
+- Contributed model and background-processing changes to an existing AI-powered
+  product, with the work merged through the team's pull-request workflow.
