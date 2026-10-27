@@ -117,6 +117,30 @@ A backend service developed as part of professional engineering work.
 
 ---
 
+## Operations Workflow Platform
+
+A workflow application that brings information from multiple business systems into
+a unified interface.
+
+**What I did:**
+- Restructured the application into modular backend and frontend components and
+  connected multiple data sources using read-only integration patterns.
+- Built a FastAPI layer and a React/TypeScript dashboard to replace an earlier
+  prototype interface while retaining its core workflows.
+- Added validation and review controls for inconsistent data.
+- Improved data-import and tracking reliability, addressed concurrency issues, and
+  added regression coverage.
+- Extended automated processing for relevant email attachments and operational
+  status updates.
+
+Delivery is ongoing; authentication integration and final end-to-end verification
+remain in review or in progress.
+
+**Stack:** Python, FastAPI, React, TypeScript, data integrations, workflow design,
+automated testing.
+
+---
+
 ## Additional Engineering Contributions
 
 - Contributed model and background-processing changes to an existing AI-powered
