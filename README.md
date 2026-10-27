@@ -11,6 +11,26 @@ and my contributions are accurate.
 
 ---
 
+## Tier A Client Onboarding & Solution Scoping
+
+Personally onboarded a new Tier A client by turning an AI learning engagement into
+a scoped professional project opportunity.
+
+**What I did:**
+- Led practical sessions on Claude and other AI tools, then listened as the client
+  described an internal project they were considering building themselves.
+- Explained the trade-offs of a do-it-yourself approach, including individual API
+  key setup, data privacy requirements, and long-term maintainability.
+- Proposed a managed solution designed around the organization's privacy and
+  operational needs, without requiring each colleague to configure API keys.
+- Defined the project scope and delivery timeline; the client signed for the
+  engagement.
+
+**Skills demonstrated:** Client discovery, AI training, technical communication,
+solution scoping, privacy-aware architecture, and business development.
+
+---
+
 ## AI-Powered Call Intelligence Platform (Real Estate)
 
 An AI platform that ingests call recordings, transcribes and analyzes them with an
